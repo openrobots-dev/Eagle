@@ -1181,6 +1181,30 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609
 </device>
 </devices>
 </deviceset>
+<deviceset name="TS462">
+<gates>
+<gate name="G$1" symbol="OP" x="-25.4" y="0"/>
+<gate name="G$2" symbol="OP" x="0" y="0"/>
+<gate name="G$3" symbol="PWR+-" x="25.4" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO8">
+<connects>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$2" pin="IN+" pad="5"/>
+<connect gate="G$2" pin="IN-" pad="6"/>
+<connect gate="G$2" pin="OUT" pad="7"/>
+<connect gate="G$3" pin="V+" pad="8"/>
+<connect gate="G$3" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
