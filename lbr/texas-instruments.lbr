@@ -1548,6 +1548,26 @@ package type OT</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LMV331">
+<gates>
+<gate name="G$1" symbol="OP" x="0" y="0"/>
+<gate name="G$2" symbol="PWR+-" x="30.48" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$2" pin="V+" pad="5"/>
+<connect gate="G$2" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
