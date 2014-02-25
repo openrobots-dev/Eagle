@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -377,6 +377,28 @@ Source: http://www.maxim-ic.com/package_drawings/21-0041B.pdf</description>
 <rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
 <rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
 </package>
+<package name="TDFN-10">
+<smd name="P$1" x="-1" y="1" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$2" x="-1" y="0.5" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$3" x="-1" y="0" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$4" x="-1" y="-0.5" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$5" x="-1" y="-1" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$6" x="1" y="-1" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$7" x="1" y="-0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$8" x="1" y="0" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$9" x="1" y="0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$10" x="1" y="1" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$11" x="0" y="0" dx="2.08" dy="0.8" layer="1" rot="R270"/>
+<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1" y="1"/>
+<vertex x="-0.5" y="1.5"/>
+<vertex x="-1" y="1.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX8606">
@@ -510,6 +532,22 @@ Source: http://www.maxim-ic.com/package_drawings/21-0041B.pdf</description>
 <text x="-0.762" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
 <pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="MAX17501">
+<pin name="VIN" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="EN" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="!RESET" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="VCC" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="SS" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="PGND" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="LX" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="NC/COMP" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -771,6 +809,30 @@ Source: http://pdfserv.maxim-ic.com/en/ds/MAX3222-MAX3241.pdf</description>
 <attribute name="OC_FARNELL" value="9725539" constant="no"/>
 <attribute name="OC_NEWARK" value="79C3880" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX17501">
+<gates>
+<gate name="G$1" symbol="MAX17501" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TDFN-10">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="P$8"/>
+<connect gate="G$1" pin="EN" pad="P$3"/>
+<connect gate="G$1" pin="FB" pad="P$5"/>
+<connect gate="G$1" pin="GND" pad="P$9"/>
+<connect gate="G$1" pin="LX" pad="P$10"/>
+<connect gate="G$1" pin="NC/COMP" pad="P$7"/>
+<connect gate="G$1" pin="PGND" pad="P$1 P$11"/>
+<connect gate="G$1" pin="SS" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+<connect gate="G$1" pin="VIN" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
