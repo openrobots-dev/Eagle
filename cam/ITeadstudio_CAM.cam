@@ -15,8 +15,9 @@ Section=Sec_11
 
 [Sec_1]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="NC Drill"
 Name[zh]="drill data"
+Prompt[en]=""
 Prompt[zh]=""
 Device="EXCELLON"
 Wheel=""
@@ -24,7 +25,7 @@ Rack=""
 Scale=1
 Output="%N.TXT"
 Flags="0 0 0 0 0 0 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -35,8 +36,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_2]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Milling"
 Name[zh]="edge milling"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=""
@@ -44,7 +46,7 @@ Rack=""
 Scale=1
 Output="%N.GML"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -55,8 +57,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_3]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Drill legend"
 Name[zh]="drill&boardoutline"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -64,7 +67,7 @@ Rack=""
 Scale=1
 Output="%N.do"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -75,8 +78,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_4]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Solder cream bottom"
 Name[zh]="padmask bottom"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -84,7 +88,7 @@ Rack=""
 Scale=1
 Output="%N.GBP"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -95,8 +99,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_5]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Solder cream top"
 Name[zh]="padmask top"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -104,7 +109,7 @@ Rack=""
 Scale=1
 Output="%N.GTP"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -115,8 +120,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_6]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Solder stop mask bottom"
 Name[zh]="solder mask bottom"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -124,7 +130,7 @@ Rack=""
 Scale=1
 Output="%N.GBS"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -135,8 +141,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_7]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Solder stop mask top"
 Name[zh]="solder mask top"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -144,7 +151,7 @@ Rack=""
 Scale=1
 Output="%N.GTS"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -155,8 +162,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_8]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Silk bottom"
 Name[zh]="silk bottom"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -164,7 +172,7 @@ Rack=""
 Scale=1
 Output="%N.GBO"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -175,8 +183,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_9]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Silk top"
 Name[zh]="silk top"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -184,7 +193,7 @@ Rack=""
 Scale=1
 Output="%N.GTO"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -195,8 +204,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_10]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Bottom layer"
 Name[zh]="bottom copper"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -204,7 +214,7 @@ Rack=""
 Scale=1
 Output="%N.GBL"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -215,8 +225,9 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_11]
 Name[de]="Lötstopmaske Lötseite"
-Name[en]="Solder stop mask SOL"
+Name[en]="Top layer"
 Name[zh]="top copper"
+Prompt[en]=""
 Prompt[zh]=""
 Device="GERBER_RS274X"
 Wheel=".whl"
@@ -224,7 +235,7 @@ Rack=""
 Scale=1
 Output="%N.GTL"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
